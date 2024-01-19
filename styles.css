@@ -16,10 +16,16 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    transition: background-color 0.5s ease;
+}
+
+header:hover {
+    background-color: #2c3e50;
 }
 
 h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 p {
@@ -32,6 +38,11 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
 }
 
 ul {
@@ -42,3 +53,6 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+/* Add more styling and animations as needed */
+
