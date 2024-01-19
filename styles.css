@@ -47,6 +47,7 @@ nav a {
     height: auto;
     display: block;
     max-width: 100%;
+    border: 2px double #fff;
 }
 
 .description {
