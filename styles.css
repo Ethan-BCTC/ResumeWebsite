@@ -72,10 +72,10 @@ nav a {
         height: auto;
     }
 
-    /*.description {
+    .description {
         padding: 10px;
         font-size: 14px;
-    }*/
+    }
 }
 
 /* Add more media queries as needed for specific breakpoints */
