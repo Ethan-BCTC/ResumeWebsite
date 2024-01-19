@@ -13,11 +13,12 @@ body {
 }
 
 header#top-banner {
-    background-color: rgba(43, 44, 45, 0.7); /* Adjust the alpha value for transparency */
+    background-color: transparent; /* Set a transparent background */
     color: #fff;
     text-align: center;
     padding: 20px 0;
     position: relative;
+    z-index: 2; /* Ensure the navigation is above the image */
 }
 
 h1 {
@@ -40,14 +41,16 @@ nav a {
 
 #main-banner {
     position: relative;
-    width: 100vw; /* Set the width to 100% of viewport width */
+    width: 100vw;
     overflow: hidden;
+    z-index: 1; /* Ensure the image is behind the navigation */
 }
 
 #main-banner img {
     width: 100%;
     height: auto;
     display: block;
+    margin-left: -1px; /* Adjust for potential small gaps between inline elements */
 }
 
 .description {
@@ -64,11 +67,11 @@ nav a {
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
-        padding: 0 10px; /* Adjust padding for smaller screens */
+        padding: 0 10px;
     }
 
     nav a {
-        margin: 0 10px; /* Adjust margin for navigation links on smaller screens */
+        margin: 0 10px;
     }
 
     .description {
@@ -76,5 +79,4 @@ nav a {
         font-size: 14px;
     }
 }
-
 
