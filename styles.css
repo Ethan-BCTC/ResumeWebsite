@@ -51,6 +51,16 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
 }
+.resume-button {
+    display: inline-block;
+    background-color: #2b2c2d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
 
 .description {
     position: absolute;
