@@ -35,7 +35,7 @@ header#top-banner {
 }
 
 nav {
-    position: absolute;
+    position: sticky;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -43,6 +43,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.7); /* Translucent background */
     border-radius: 8px; /* Add border-radius for rounded corners */
     padding: 10px; /* Add padding for better aesthetics */
+    width: auto;
 }
 
 nav a {
