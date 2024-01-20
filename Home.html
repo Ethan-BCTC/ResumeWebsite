@@ -41,17 +41,18 @@
     </section>
 
     <script src="script.js"></script>
-    <!-- Add this script to your HTML -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const nav = document.querySelector('nav');
-
-        hamburgerMenu.addEventListener('click', function () {
-            nav.classList.toggle('show-nav');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('nav');
+    
+            hamburgerMenu.addEventListener('click', function () {
+                nav.classList.toggle('show-nav');
+                hamburgerMenu.classList.toggle('hide-icon'); // Add this line to toggle the icon visibility
+            });
         });
-    });
-</script>
+    </script>
+    
 
 </body>
 </html>

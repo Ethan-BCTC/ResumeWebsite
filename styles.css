@@ -126,11 +126,12 @@ nav a {
         position: absolute;
         top: 20px;
         right: 20px;
-        transform: translate(50%,-50%);
-        cursor: pointer;
-        
+        cursor: pointer; 
         color: #333;
     }
+.hamburger-menu.hide-icon{
+    display: none;
+}
 
     nav {
         width: 80%; /* Make the navigation full-width on smaller screens */
