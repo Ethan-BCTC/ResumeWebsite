@@ -37,9 +37,11 @@ header#top-banner {
 h1 {
     margin: 0;
     font-size: 2em;
-    position: absolute;
-    top: 20px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
+}
+
+h1 a {
+    color: #fff;
+    text-decoration: none;
 }
 
 nav {
