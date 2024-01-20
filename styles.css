@@ -34,16 +34,21 @@ header#top-banner {
     z-index: 1; /* Ensure the navigation is above the image */
 }
 
+h1 {
+    margin: 0;
+    font-size: 2em;
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
+
 nav {
-    position: sticky;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0; /* Adjust to start from the top */
+    left: 0;
+    width: 100%; /* Make the navigation full-width */
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent background for navigation */
     z-index: 2; /* Ensure the navigation is above the image */
-    background-color: rgba(0, 0, 0, 0.7); /* Translucent background */
-    border-radius: 8px; /* Add border-radius for rounded corners */
-    padding: 10px; /* Add padding for better aesthetics */
-    width: auto;
 }
 
 nav a {
@@ -51,16 +56,6 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
 }
-.resume-button {
-    display: inline-block;
-    background-color: #2b2c2d;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 20px; /* Adjust margin for spacing */
-}
-
 
 .description {
     position: absolute;
