@@ -38,6 +38,9 @@ header#top-banner {
 h1 {
     margin: 0;
     font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 20px; /* Adjusted left position */
 }
 
 h1 a {
@@ -49,10 +52,11 @@ h1 a {
     border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
+
 nav {
     position: absolute;
     top: 0; /* Adjust to start from the top */
-    left: 30%; /* Adjusted left position */
+    right: 0; /* Adjusted right position */
     width: 40%; /* Adjusted width of the navigation */
     background-color: rgba(0, 0, 0, 0.7); /* Translucent background for navigation */
     z-index: 2; /* Ensure the navigation is above the image */
@@ -97,7 +101,7 @@ nav a {
 
     nav {
         width: 80%; /* Make the navigation full-width on smaller screens */
-        left: 10%; /* Adjusted left position for better centering on smaller screens */
+        right: 10%; /* Adjusted right position for better centering on smaller screens */
     }
 
     nav a {
