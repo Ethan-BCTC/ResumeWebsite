@@ -53,51 +53,6 @@ h1 a {
 }
 
 
-
-.hamburger-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.hamburger-menu::before {
-    content: '\2630'; /* Unicode character for the hamburger menu icon */
-    font-size: 25px;
-    color: #fff;
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease;
-}
-
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-
-
-nav.show-nav {
-    height: auto; /* Open the navigation by setting its height to auto */
-}
-
-
 .description {
     position: absolute;
     top: 50%;
@@ -125,36 +80,8 @@ nav.show-nav {
         padding: 0 10px;
     }
 
-    .hamburger-menu {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer; 
-        color: #333;
-    }
-
-
-    nav {
-        width: 80%; /* Make the navigation full-width on smaller screens */
-        right: 10%; /* Adjusted right position for better centering on smaller screens */
-        left: auto; /* Reset the left position */
-        transform: none; /* Remove the horizontal translation */
-    }
-
-    nav a {
-        font-size: 1em; /* Adjust the font size for smaller screens */
-        margin-bottom: 8px; /* Reduce margin between links for smaller screens */
-    }
-
     .description {
         padding: 10px;
         font-size: 14px;
     }
 }
-
-
-
-.hamburger-menu.open-menu {
-    color: #333; /* Set the color for the open menu icon */
-}
-
