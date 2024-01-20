@@ -1,3 +1,4 @@
+/* Corrected CSS */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -53,13 +54,13 @@ nav {
     background-color: rgba(0, 0, 0, 0.7); /* Translucent background for navigation */
     z-index: 2; /* Ensure the navigation is above the image */
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Adjusted to separate the h1 and nav */
     align-items: center;
+    padding: 0 20px; /* Added padding for better spacing */
 }
 
 nav a {
     color: #fff;
-    margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em; /* Adjust the font size as needed */
 }
@@ -91,8 +92,13 @@ nav a {
         padding: 0 10px;
     }
 
+    nav {
+        flex-direction: column; /* Adjusted to stack h1 and nav vertically on smaller screens */
+        align-items: center;
+    }
+
     nav a {
-        margin: 0 10px;
+        margin: 10px 0; /* Adjusted margin for spacing between nav items on smaller screens */
         font-size: 1em; /* Adjust the font size for smaller screens */
     }
 
