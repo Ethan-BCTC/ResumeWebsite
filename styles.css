@@ -129,8 +129,9 @@ nav a {
         cursor: pointer; 
         color: #333;
     }
-.hamburger-menu.hide-icon{
-    display: none;
+nav.show-nav{
+
+    z-index: 2;
 }
 
     nav {
