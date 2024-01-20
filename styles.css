@@ -52,19 +52,21 @@ h1 a {
     border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
-
 nav {
     position: absolute;
-    top: 0; /* Adjust to start from the top */
-    right: 0; /* Adjusted right position */
-    width: 40%; /* Adjusted width of the navigation */
-    background-color: rgba(0, 0, 0, 0.7); /* Translucent background for navigation */
-    z-index: 2; /* Ensure the navigation is above the image */
+    top: 0;
+    left: 50%; /* Center the navigation horizontally */
+    transform: translateX(-50%); /* Adjust to center properly */
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
     display: flex;
-    justify-content: space-around; /* Adjusted for better spacing */
+    justify-content: space-around;
     align-items: center;
-    padding: 0 20px; /* Added padding for better spacing */
+    padding: 0 20px;
 }
+
+
 
 nav a {
     color: #fff;
