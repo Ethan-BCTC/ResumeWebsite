@@ -152,3 +152,9 @@ nav.show-nav{
     }
 }
 
+
+
+.hamburger-menu.open-menu {
+    color: #333; /* Set the color for the open menu icon */
+}
+
