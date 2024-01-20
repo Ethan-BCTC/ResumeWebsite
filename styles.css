@@ -117,6 +117,7 @@ nav a {
 }
 
 
+/* Add this to your CSS */
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -127,13 +128,19 @@ nav a {
   .bar {
     width: 30px;
     height: 3px;
-    background-color: #ff0000;
+    background-color: #fff;
     margin: 6px 0;
   }
   
   @media screen and (max-width: 768px) {
     nav {
       display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 70px; /* Adjust the top position as needed */
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
     }
   
     nav.show-nav {
@@ -144,5 +151,6 @@ nav a {
       display: flex;
     }
   }
+  
   
   
