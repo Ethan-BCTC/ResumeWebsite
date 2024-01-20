@@ -4,12 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px; /* Add padding to the container for better readability */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #background-image {
@@ -22,7 +17,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0; /* Ensure the background is behind everything */
+    z-index: -1; /* Move the background behind everything */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the container for better readability */
 }
 
 header#top-banner {
@@ -31,11 +32,6 @@ header#top-banner {
     padding: 20px 0;
     position: relative;
     z-index: 1; /* Ensure the navigation is above the image */
-}
-
-h1 {
-    margin: 0;
-    font-size: 2em;
 }
 
 nav {
