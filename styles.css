@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -12,7 +13,7 @@ body {
 }
 
 header#top-banner {
-    background-image: url('EthanBanner.jpg'); /* Set the image as background */
+    background-image: url('EthanBanner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
