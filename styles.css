@@ -97,9 +97,10 @@ h1 a {
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
@@ -116,7 +117,7 @@ h1 a {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
-
+  
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
