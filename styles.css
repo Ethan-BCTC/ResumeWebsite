@@ -13,12 +13,12 @@ body {
 }
 
 header#top-banner {
-    background-color: transparent; /* Set a transparent background */
+    background-color: rgba(43, 44, 45, 0.7); /* Adjust the alpha value for transparency */
     color: #fff;
     text-align: center;
     padding: 20px 0;
     position: relative;
-    z-index: 2; /* Ensure the navigation is above the image */
+    z-index: 1; /* Ensure the navigation is below the image */
 }
 
 h1 {
@@ -31,6 +31,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the navigation is above the image */
 }
 
 nav a {
@@ -43,7 +44,7 @@ nav a {
     position: relative;
     width: 100vw;
     overflow: hidden;
-    z-index: 1; /* Ensure the image is behind the navigation */
+    z-index: 1; /* Ensure the image is in front of the navigation */
 }
 
 #main-banner img {
