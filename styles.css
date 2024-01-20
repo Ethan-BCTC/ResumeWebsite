@@ -1,11 +1,11 @@
-
+/* Updated CSS */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden; 
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #background-image {
@@ -18,13 +18,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; 
+    z-index: -1; /* Move the background behind everything */
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px; 
+    padding: 0 20px; /* Add padding to the container for better readability */
 }
 
 header#top-banner {
@@ -32,7 +32,7 @@ header#top-banner {
     text-align: center;
     padding: 20px 0;
     position: relative;
-    z-index: 1; 
+    z-index: 1; /* Ensure the navigation is above the image */
 }
 
 h1 {
@@ -40,38 +40,59 @@ h1 {
     font-size: 2em;
     position: absolute;
     top: 0;
-    left: 20px; 
+    left: 20px; /* Adjusted left position */
 }
 
 h1 a {
     color: #fff;
     text-decoration: none;
-    font-weight: inherit; 
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 10px; 
-    border-radius: 8px; 
+    font-weight: inherit; /* Inherit the font weight from the navigation */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for the name */
+    padding: 10px; /* Adjust padding for better styling */
+    border-radius: 8px; /* Add border-radius for rounded corners */
 }
+
+.hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
 nav {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%; /* Adjust the width as needed */
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease; /* Add a smooth transition for the height */
 }
 
-
-
+nav.show-nav {
+    height: auto; /* Open the navigation by setting its height to auto */
+}
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em; 
+    font-size: 1.2em; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add margin between the links */
 }
 
 .description {
@@ -92,22 +113,29 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
-    margin-top: 20px; 
+    margin-top: 20px; /* Adjust margin for spacing */
 }
 
-
+/* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 10px;
     }
 
+    .hamburger-menu {
+        display: block; /* Show on smaller screens */
+    }
+
     nav {
-        width: 80%; 
-        right: 10%; 
+        width: 80%; /* Make the navigation full-width on smaller screens */
+        right: 10%; /* Adjusted right position for better centering on smaller screens */
+        left: auto; /* Reset the left position */
+        transform: none; /* Remove the horizontal translation */
     }
 
     nav a {
-        font-size: 1em; 
+        font-size: 1em; /* Adjust the font size for smaller screens */
+        margin-bottom: 8px; /* Reduce margin between links for smaller screens */
     }
 
     .description {
@@ -116,41 +144,3 @@ nav a {
     }
 }
 
-
-/* Add this to your CSS */
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 6px 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    nav {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 70px; /* Adjust the top position as needed */
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-  
-    nav.show-nav {
-      display: flex;
-    }
-  
-    .hamburger-menu {
-      display: flex;
-    }
-  }
-  
-  
-  
