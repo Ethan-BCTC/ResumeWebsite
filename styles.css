@@ -52,12 +52,12 @@ h1 a {
 nav {
     position: absolute;
     top: 0; /* Adjust to start from the top */
-    left: 0;
-    width: 70%; /* Adjusted width of the navigation */
+    left: 30%; /* Adjusted left position */
+    width: 40%; /* Adjusted width of the navigation */
     background-color: rgba(0, 0, 0, 0.7); /* Translucent background for navigation */
     z-index: 2; /* Ensure the navigation is above the image */
     display: flex;
-    justify-content: space-between; /* Adjusted to separate the h1 and nav */
+    justify-content: space-around; /* Adjusted for better spacing */
     align-items: center;
     padding: 0 20px; /* Added padding for better spacing */
 }
@@ -96,14 +96,11 @@ nav a {
     }
 
     nav {
-        width: 100%; /* Make the navigation full-width on smaller screens */
-        flex-direction: column; /* Adjusted to stack h1 and nav vertically on smaller screens */
-        align-items: center;
-        padding: 10px; /* Adjusted padding for better spacing on smaller screens */
+        width: 80%; /* Make the navigation full-width on smaller screens */
+        left: 10%; /* Adjusted left position for better centering on smaller screens */
     }
 
     nav a {
-        margin: 10px 0; /* Adjusted margin for spacing between nav items on smaller screens */
         font-size: 1em; /* Adjust the font size for smaller screens */
     }
 
