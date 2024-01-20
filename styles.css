@@ -52,27 +52,26 @@ h1 a {
     border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
+
+
 .hamburger-menu {
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
-    display: none; /* Hide by default on larger screens */
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
+.hamburger-menu::before {
+    content: '\2630'; /* Unicode character for the hamburger menu icon */
+    font-size: 25px;
+    color: #fff;
 }
 
 nav {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%; /* Adjust the width as needed */
+    left: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
     display: flex;
@@ -81,19 +80,23 @@ nav {
     padding: 0 20px;
     height: 0;
     overflow: hidden;
-    transition: height 0.3s ease; /* Add a smooth transition for the height */
+    transition: height 0.3s ease;
 }
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
 
 nav.show-nav {
     height: auto; /* Open the navigation by setting its height to auto */
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add margin between the links */
-}
 
 .description {
     position: absolute;
@@ -129,10 +132,7 @@ nav a {
         cursor: pointer; 
         color: #333;
     }
-nav.show-nav{
 
-    z-index: 2;
-}
 
     nav {
         width: 80%; /* Make the navigation full-width on smaller screens */

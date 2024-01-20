@@ -4,6 +4,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     hamburgerMenu.addEventListener('click', function () {
         nav.classList.toggle('show-nav');
-        hamburgerMenu.classList.toggle('open-menu');
     });
 });
