@@ -20,22 +20,27 @@
     <section id="main-banner" class="container">
         <div class="description">
             <h2>Software Engineer - Web Designer - Student</h2>
-            <p>Hello! My name is Ethan Biekert, as you continue to explore my website you will learn who I am and my qualifications to lead your team.</p>
-            <a onclick="toggleDropdown()" class="resume-button">Download Resume</a>
             <div class="dropdown">
-    <a onclick="toggleDropdown()" class="resume-button">Contact Me</a>
-    <div id="myDropdown" class="dropdown-content">
-        <a href="#">Linkedin</a>
-        <a href="#">Instagram</a>
-        <a href="#">Indeed</a>
-        <a href="#">Skype</a>
-        <a href="#">Cell/Email</a>
-    </div>
-</div>
-
+                <button onclick="toggleDropdown('resumeDropdown')" class="resume-button">Download Resume</button>
+                <div id="resumeDropdown" class="dropdown-content">
+                    <a href="#">PDF</a>
+                    <a href="#">Word</a>
+                    <a href="#">Text</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown('contactDropdown')" class="resume-button">Contact Me</button>
+                <div id="contactDropdown" class="dropdown-content">
+                    <a href="#">Linkedin</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Indeed</a>
+                    <a href="#">Skype</a>
+                    <a href="#">Cell/Email</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    
 </body>
 </html>
+

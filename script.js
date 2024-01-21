@@ -1,5 +1,6 @@
-function toggleDropdown() {
-    var dropdown = document.getElementById("myDropdown");
+// Updated JS
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
     dropdown.classList.toggle("show");
 }
 
@@ -15,4 +16,3 @@ window.onclick = function (event) {
         }
     }
 }
-
