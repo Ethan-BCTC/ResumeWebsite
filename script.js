@@ -1,4 +1,3 @@
-// Updated JS
 window.onclick = function (event) {
     var dropdownClicked = event.target.matches('.resume-button');
     
@@ -10,7 +9,6 @@ window.onclick = function (event) {
         }
     }
 
-    // Check if the clicked element is the modal
     if (event.target == modal) {
         modal.style.display = "none";
     }
