@@ -33,12 +33,12 @@ var btn = document.getElementById("instabtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function modalopen() {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function modalclose() {
   modal.style.display = "none";
 }
 
