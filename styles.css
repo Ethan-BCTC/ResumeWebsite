@@ -17,6 +17,12 @@ body {
   position: fixed;
   margin: 5px 0;
 }*/
+#closePopup{
+  transform: translate(50%,-10%);
+}
+#instagramQR {
+  transform: translateX(50%);
+}
 #background-image {
     position: fixed;
     top: 0;
