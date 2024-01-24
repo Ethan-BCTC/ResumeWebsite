@@ -6,17 +6,17 @@ body {
     color: #333;
     overflow-x: hidden;
 }
-#qr-container{
-  background-image: url("instaqr.png");
-  /*background-size: auto;
+/*#qr-container{
+  image: url("instaqr.png");
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
   height: 100%;
   width: 100%;
   position: fixed;
-  margin: 5px 0;*/
-}
+  margin: 5px 0;
+}*/
 #background-image {
     position: fixed;
     top: 0;
