@@ -103,6 +103,7 @@ h3 a{
     position: absolute;
     top: 0;
     left: 250px;
+    margin: 0;
 }
 #body-container{
   display: flex;
