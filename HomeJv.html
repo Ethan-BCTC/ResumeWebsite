@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="jv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    <title>Ethan Biekert (日本人)</title>
+    <link rel="icon" href="WebsiteIcon.png" type="image/png">
+</head>
+<body>
+    <div id="background-image"></div>
+    <header id="top-banner">
+        <div class="container">
+            <h1><a href="Homejv.html">Ethan Biekert</a></h1>
+            <h3><a href="Home.html">English</a></h3>
+        </div>
+    </header>
+    <section id="main-banner" class="container">
+        <div class="description">
+            <h2>ソフトウェアエンジニア - ウェブデザイナー - 学生</h2>
+            <p>こんにちは！私の名前はイーサン・ビーケルトで、私のウェブサイトを探索し続けると、私が誰であるか、そしてあなたのチームを率いる資格がわかります。</p>
+            <div class="dropdown">
+                <a onclick="toggleDropdown('resumeDropdown')" class="resume-button">履歴書のダウンロード</a>
+                <div id="resumeDropdown" class="dropdown-content">
+                    <a href="Resume.docx" download>レジュメ.docx</a>
+                    <a href="Resume.pdf" download>レジュメ.pdf</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a onclick="toggleDropdown('contactDropdown')" class="resume-button">私に連絡しなさい</a>
+                <div id="contactDropdown" class="dropdown-content">
+                    <a href="https://www.linkedin.com/in/kevin-biekert-736939260/">Linkedin(リンクトイン)</a>
+                    <a id="myButton">インスタグラム</a>
+                    <a href="#">確かに</a>
+                    <a href="#">スカイプ</a>
+                    <a href="Cell.html">セル/メール</a>
+                </div>
+                <a href="experience.html" class="resume-button">職歴</a>
+                <a href="certifications.html" class="resume-button">認証</a>
+                <a href="education.html" class="resume-button">教育</a>
+                <a href="accomplishments.html" class="resume-button">成果</a>
+            <div class="dropdown">
+                <a onclick="toggleDropdown('impactdropdown')" class="resume-button">インパクト</a>
+                <div id="impactdropdown" class="dropdown-content">
+                    <a href="cs.html">社会奉仕</a>
+                    <a href="recomendations.html">推奨 事項</a>
+                    <a href="references.html">参照</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <div id="qr-container"></div>
+            <a id="closePopup" class="resume-button">閉める</a>
+        </div>
+    </div>
+    <script>
+
+myButton.addEventListener("click", function () {
+    myPopup.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+    myPopup.classList.remove("show");
+});
+window.addEventListener("click", function (event) {
+    if (event.target == myPopup) {
+        myPopup.classList.remove("show");
+    }
+});
+    </script>
+</body>
+</html>
+
