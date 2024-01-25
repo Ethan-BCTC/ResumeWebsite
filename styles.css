@@ -104,6 +104,10 @@ h3 a{
     top: 0;
     left: 500px;
 }
+#body-container{
+  display: flex;
+  margin: 0 20px;
+}
 .CellNumStyl{
 text-align: left;
 }
