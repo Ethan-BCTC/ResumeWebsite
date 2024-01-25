@@ -108,6 +108,7 @@ h3 a{
   display: flex;
   margin: 0 20px;
 }
+
 .CellNumStyl{
 text-align: left;
 }
@@ -184,9 +185,9 @@ text-align: right;
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
-  margin: auto;
-  float: right;
+  position: absolute;
+  top: 50%;
+  left: 60%;
 }
 
 /* Hide the images by default 
