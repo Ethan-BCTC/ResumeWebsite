@@ -156,14 +156,16 @@ text-align: right;
   cursor: pointer;
 }
 #flex-description{
-position: absolute;
-display: inline;
-top: 25%;
-left: 40%;
 background-color: rgba(0, 0, 0, 0.7);
+height: 100%;
+width: 100%;
 color: #fff;
 padding: 20px;
 border-radius: 8px;
+position: absolute;
+display: flex;
+top: 25%;
+left: 40%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
