@@ -67,6 +67,79 @@ Left: 47.5%;
 margin: 0 auto;
 align-self: center;
 }
+.popup-content2 {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin: 10% auto;
+  padding: 20px;
+  border: none;
+  width: 30%;
+  font-weight: bolder;
+  height: 400px;
+  width: 800px;
+  }
+  #closePopup{
+  position: absolute;
+  top: 73%;
+  Left: 47.5%;
+  margin: 0 0%;
+  }
+  #Theature{
+  position: absolute;
+  top: 73%;
+  Left: 25%;
+  margin: 0 0%;
+  }
+  .popup-content3 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    margin: 10% auto;
+    padding: 20px;
+    border: none;
+    width: 30%;
+    font-weight: bolder;
+    height: 400px;
+    width: 800px;
+    }
+    #closePopup{
+    position: absolute;
+    top: 73%;
+    Left: 47.5%;
+    margin: 0 0%;
+    }
+    #closePopup2{
+      position: absolute;
+      top: 73%;
+      Left: 55%;
+      margin: 0 0%;
+      width: 15%;
+      }
+    #closePopup3{
+        position: absolute;
+        top: 73%;
+        Left: 47.5%;
+        margin: 0 0%;
+      }
+    #Theature{
+    position: absolute;
+    top: 73%;
+    Left: 25%;
+    margin: 0 0%;
+    }
+    #silverEagle{
+      position: absolute;
+      top: 73%;
+      Left: 30%;
+      margin: 0 0%;
+      }
+  #tsa{
+  position: absolute;
+  top: 73%;
+  Left: 62%;
+  margin: 0 0;
+  }
 .show {
 display: block;
 }
@@ -75,6 +148,15 @@ display: block;
   margin: 0 auto;
   padding: 0 20px; 
 }
+
+  .show {
+  display: block;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; 
+  }
 
 header#top-banner {
   color: #fff;
@@ -155,17 +237,15 @@ text-align: right;
   border: none;
   cursor: pointer;
 }
-#flex-description{
+.flex-description{
 background-color: rgba(0, 0, 0, 0.7);
-height: 100%;
-width: 100%;
 color: #fff;
 padding: 20px;
 border-radius: 8px;
 position: absolute;
-display: flex;
+display: block;
 top: 25%;
-left: 40%;
+left: 42%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
