@@ -155,7 +155,16 @@ text-align: right;
   border: none;
   cursor: pointer;
 }
-
+#flex-description{
+position: absolute;
+display: inline;
+top: 25%;
+left: 40%;
+background-color: rgba(0, 0, 0, 0.7);
+color: #fff;
+padding: 20px;
+border-radius: 8px;
+}
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #2980B9;
