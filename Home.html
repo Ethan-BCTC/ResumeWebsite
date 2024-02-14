@@ -1,82 +1,350 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="./Styles.css">
+<script src="./script.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
     <title>Ethan Biekert</title>
     <link rel="icon" href="./WebsiteIcon.png" type="image/png">
 </head>
+<div class="headnav">
+    <h2 class="name" onclick="disclaimer()">Disclaimer</h2>
+    <a href="./HomeJv.html" class="link">日本人</a>
+</div>
+
 <body>
-    <div id="background-image"></div>
-    <header id="top-banner">
-        <div class="container">
-            <h1><a href="./Home.html">Ethan Biekert</a></h1>
-            <h3><a href="./HomeJv.html">日本人</a></h3>
+    <div class="headshot"></div>
+    <div id="lbh" class="lhb">
+        <p class="space1">space</p>
+        <div class="contact-container">
+            <p class="contact">Contact:</p>
+            <button class="contactdrop" onclick="toggleDropdown('contactDropdown','+/-/Contact','--contactVis')"><span id="+/-/Contact">+</span></button>
         </div>
-    </header>
-    <section id="main-banner" class="container">
-        <div class="description">
-            <h2>Software Engineer - Web Designer - Student</h2>
-            <p>Hello! My name is Ethan Biekert, as you continue to explore my website you will learn who I am and my qualifications to lead your team.</p>
-            <div class="dropdown">
-                <a onclick="toggleDropdown('resumeDropdown')" class="resume-button">Download Resume</a>
-                <div id="resumeDropdown" class="dropdown-content">
-                    <a href="./Resume.docx" download>Resume.docx</a>
-                    <a href="./Resume.pdf" download>Resume.pdf</a>
+        <div Id="contactDropdown">
+            <p>(610) 310-0122</p>
+            <p>biekertfreelance@gmail.com</p>
+            <button class="resume-button" id="myButton">Instagram</button>
+        </div>
+        
+        <hr class="contacthl" />
+
+        <p class="contact">Skils:</p>
+        <button class="skillsdrop" onclick="toggleDropdown('skillsDropdown','+/-/Skills','--skillsVis')"><span id="+/-/Skills">+</span></button>
+        <div class="skillsDropdown">
+            <div class="softSkills-Container">
+                    <p>Soft Skills</p>
+                    <button class="skillsdrop" onclick="toggleDropdown('ssDropdown','+/-/ss','--ssVis')"><span id="+/-/ss">+</span></button>
+                <div class="ssDropdown">
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Work</li>
+                        <li>Calm Under Pressure</li>
+                        <li>Leadership</li>
+                    </ul>
                 </div>
             </div>
-            <div class="dropdown">
-                <a onclick="toggleDropdown('contactDropdown')" class="resume-button">Contact Me</a>
-                <div id="contactDropdown" class="dropdown-content">
-                    <a href="https://www.linkedin.com/in/kevin-biekert-736939260/">Linkedin</a>
-                    <a id="myButton">Instagram</a>
-                    <a href="#">Indeed</a>
-                    <a href="#">Skype</a>
-                    <a href="./Cell.html">Cell/Email</a>
-                </div>
-                <a href="#" class="resume-button" style="background-color: grey;">Work Expirence</a>
-                <a href="#" class="resume-button"style="background-color: grey;">Certifications</a>
-            <div class="dropdown">
-                <a onclick="toggleDropdown('educationDropdown')" class="resume-button">Education</a>
-                <div id="educationDropdown" class="dropdown-content">
-                    <a href="./Exeter.html">Secondary School</a>
-                    <a href="./bctc.html">3 Year Trade School</a>
-                </div>
-            </div>
-                <a href="#" class="resume-button"style="background-color: grey;">Accomplishments</a>
-            <div class="dropdown">
-                <a onclick="toggleDropdown('impactdropdown')" class="resume-button">Impact</a>
-                <div id="impactdropdown" class="dropdown-content">
-                    <a href="./cs.html">Community Service</a>
-                    <a href="./recomendations.html">Recomendations</a>
-                    <a href="./references.html">References</a>
-                </div>
+            <div class="ITP-Container">
+                <p>IT & Programming</p>
+                <button class="skillsdrop" onclick="toggleDropdown('itpDropdown','+/-/itp','--itpVis')"><span id="+/-/itp">+</span></button>
+            <div class="itpDropdown">
+                <ul>
+                    <li>Visual Basic</li>
+                    <li>Web Development</li>
+                    <li>HTML5/CSS3/JS</li>
+                    <li>Visual Studio GUI</li>
+                    <li>Microsoft 365 (Excel, Word, Visio, etc.)</li>
+                    <li>C++</li>
+                </ul>
             </div>
         </div>
-    </section>
-    <div id="myPopup" class="popup">
-        <div class="popup-content">
-            
-            <button id="closePopup" class="resume-button">Close</button>
         </div>
+
+        <hr class="skillshl" />
+    <div class="lang">
+
+        <p class="languages">Languages:</p>
+        <button class="langDrop" onclick="toggleDropdown('langDropdown','+/-/Lang','--langVis')"><span id="+/-/Lang">+</span></button>
+        <div class="langDropdown">
+            <div class="engBar">
+                <p>English</p>
+                <hr /><area></area>
+            </div>
+            <div class="jpnBar">
+                <p>Japanese</p>
+                <hr /><area></area>
+            </div>
+        </div>
+    
+    <hr class="langhl"/>
+</div>
+    <div class="gpaClass">
+        <p class="gpa">Grade 4 Point Average:</p>
+        <button class="gpaDrop" onclick="gpapopup()"><span id="+/-/Gpa">+</span></button>
+        
     </div>
-    <script>
-
-myButton.addEventListener("click", function () {
-    myPopup.classList.add("show");
-});
-closePopup.addEventListener("click", function () {
-    myPopup.classList.remove("show");
-});
-window.addEventListener("click", function (event) {
-    if (event.target == myPopup) {
-        myPopup.classList.remove("show");
-    }
-});
-    </script>
+</div>
+<area class="screenArea" onclick="gpapopup()"></area>
+<div class="gpaDropdown">
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Semester 1</th>
+            <th>Semester 2</th>
+            <th>Cumulative</th>
+        </tr>
+        <tr>
+            <td>Freshman</td>
+            <td>#.##</td>
+            <td>#.##</td>
+            <td>#.##</td>
+        </tr>
+        <tr>
+            <td>Sophomore</td>
+            <td>#.##</td>
+            <td>N/A</td>
+            <td>#.##</td>
+        </tr>
+        <tr>
+            <td>Junior</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Senior</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>To Date (2/24)</td>
+            <td></td>
+            <td></td>
+            <td>#.##</td>
+        </tr>
+    </table>
+</div>
+<div class="disClaim" onclick="disclaimer()"></div>
+<div class="Head">
+    <p class="headname">Ethan Biekert</p>
+    <p class="headname2">Software Engineer | Web Designer</p>
+    <hr class="headLine"/>
+</div>
+<div class="educationHead">
+    <h2 class="educationTitle">Education</h2>
+    <hr class="headLine2" />
+</div>
+<div class="Education">
+    <table>
+        <tr>
+            <th>Exeter Township Senior High School</th>
+            <th>Berks Career and Technology Center</th>
+        </tr>
+    </table>
+    <hr class="headline3" />
+    <div class="ETHS">
+        <table>
+            <tr>
+                <th><h3>Relevent Course Work</h3></th>
+                <th><h3>Awards</h3></th>
+                <th><h3>Clubs</h3></th>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>Example</td>
+                <td>Example</td>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>Example</td>
+                <td>Example</td>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>Example</td>
+                <td>Example</td>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>Example</td>
+                <td>Example</td>
+            </tr>
+        </table>
+    </div>
+    <hr class="headline4" />
+</div>
 </body>
-</html>
+<div class="disClaimTxt">
+    <h1 >Site Currently Under Construction</h1>
+    <h1></h1>
+    <h1>Some Styles and site functionality may not be availabe for your Device</h1>
+    </div>
+<script>
+    var disclaimOpen = false;
+    function disclaimer(){
+    var h = window.screen.height;
+    var w = window.screen.width;
+    if (disclaimOpen == false){
+        r.style.setProperty('--areaH', h + 'px');
+        r.style.setProperty('--areaW', w + 'px');
+        r.style.setProperty('--disclaimer', 'inherit');
+        r.style.setProperty('--disclaimerTxt', 'block');
+        disclaimOpen = true;
+    }
+    else{
+        r.style.setProperty('--disclaimer', 'none');
+        r.style.setProperty('--disclaimerTxt', 'none');
+        disclaimOpen = false;
+    }
+    }
+</script>
+<script>
+   function gpapopup(){
+    var btn = document.getElementById('+/-/Gpa');
+    var r = document.querySelector(':root');
+    var h = window.screen.height;
+    var w = window.screen.width;
+    if (btn.innerHTML == "+"){
+        btn.innerHTML = "-";
+        r.style.setProperty('--gpaVis', 'inherit');
+        r.style.setProperty('--areaH', h + 'px');
+        r.style.setProperty('--areaW', w + 'px');
+    }
+    else{
+        btn.innerHTML = "+";
+        r.style.setProperty('--gpaVis','none');
+        r.style.setProperty('--areaH','0');
+        r.style.setProperty('--areaW','0');
+    }
+   }
+</script>
+<script>
+    function toggleDropdown(dropdownId, buttonID, styleVar2) {
+        var dropdown = document.getElementById(dropdownId);
+        var btn = document.getElementById(buttonID);
+        if (btn.innerHTML == "+") {
+            btn.innerHTML = "-";
+            r.style.setProperty(styleVar2, 'inherit')
+            if (buttonID == '+/-/Contact'){
+            r.style.setProperty('--lbhHeight', '90%');
 
+            document.getElementById('+/-/Skills').innerHTML = "+"
+            r.style.setProperty('--skillsVis', 'none')
+
+            document.getElementById('+/-/Lang').innerHTML = "+"
+            r.style.setProperty('--langVis', 'none')
+
+            }
+            if (buttonID == '+/-/Skills'){
+            r.style.setProperty('--lbhHeight', '87%');
+
+            document.getElementById('+/-/Contact').innerHTML = "+"
+            r.style.setProperty('--contactVis', 'none')
+
+            document.getElementById('+/-/itp').innerHTML = "+"
+            r.style.setProperty('--itpVis', 'none')
+
+            document.getElementById('+/-/ss').innerHTML = "+"
+            r.style.setProperty('--ssVis', 'none')
+
+            document.getElementById('+/-/Lang').innerHTML = "+"
+            r.style.setProperty('--langVis', 'none')
+            }
+            if (buttonID == '+/-/itp'){
+            r.style.setProperty('--skillshl', 'translateY(-500%)')
+            r.style.setProperty('--langAdj', 'translateY(20%)')
+            r.style.setProperty('--lbhHeight', '110%')
+            r.style.setProperty('--gpaAdj', 'translateY(5px)')
+
+            document.getElementById('+/-/Contact').innerHTML = "+"
+            r.style.setProperty('--contactVis', 'none')
+
+            document.getElementById('+/-/ss').innerHTML = "+"
+            r.style.setProperty('--ssVis', 'none')
+
+            document.getElementById('+/-/Lang').innerHTML = "+"
+            r.style.setProperty('--langVis', 'none')
+            }
+            if (buttonID == '+/-/ss'){
+            r.style.setProperty('--itpAdj', 'translateY(-30%)')
+            r.style.setProperty('--itpbtnAdj', 'translateY(-115%)')
+            r.style.setProperty('--lbhHeight', '100%')
+            r.style.setProperty('--gpaAdj', 'translateY(-5px)')
+
+            document.getElementById('+/-/Contact').innerHTML = "+"
+            r.style.setProperty('--contactVis', 'none')
+
+            document.getElementById('+/-/itp').innerHTML = "+"
+            r.style.setProperty('--itpVis', 'none')
+
+            document.getElementById('+/-/Lang').innerHTML = "+"
+            r.style.setProperty('--langVis', 'none')
+            }
+            if (buttonID == '+/-/Lang'){
+            r.style.setProperty('--langhlAdj', 'translateY(-2000%)')
+            r.style.setProperty('--lbhHeight', '87%')
+
+            document.getElementById('+/-/Contact').innerHTML = "+"
+            r.style.setProperty('--contactVis', 'none')
+
+            document.getElementById('+/-/Skills').innerHTML = "+"
+            r.style.setProperty('--skillsVis', 'none')
+
+            document.getElementById('+/-/Contact').innerHTML = "+"
+            r.style.setProperty('--contactVis', 'none')
+
+            document.getElementById('+/-/Skills').innerHTML = "+"
+            r.style.setProperty('--skillsVis', 'none')
+            }
+        }
+        else {
+            btn.innerHTML = "+";
+            r.style.setProperty(styleVar2, 'none')
+            r.style.setProperty('--gpaAdj', 'translateY(-10px)')
+            if (buttonID != '+/-/itp' && buttonID != '+/-/ss')
+            {r.style.setProperty('--lbhHeight', 'calc(75% - 20px)')}
+            if(buttonID == '+/-/itp'){
+                r.style.setProperty('--skillshl', 'translateY(-990%)')
+                r.style.setProperty('--langAdj', 'translateY(0%)')
+                r.style.setProperty('--lbhHeight', '87%');
+            }
+            if (buttonID == '+/-/ss'){
+            r.style.setProperty('--itpAdj', 'translateY(-100%)')
+            r.style.setProperty('--itpbtnAdj', 'translateY(-170%)')
+            r.style.setProperty('--lbhHeight', '87%');
+            }
+            if (buttonID == '+/-/Lang'){
+            r.style.setProperty('--langhlAdj', 'translateY(-1700%)')
+            }
+        }
+    }
+
+</script>
+<div id="myPopup" class="popup">
+    <area id="instaLink" href="https://www.instagram.com/bieks26?igsh=MWQxdGZ6NXZkM3N1eA%3D%3D&utm_source=qr"></area>
+    <div class="popup-content">
+        <button id="closePopup" class="resume-button">Close</button>
+    </div>
+</div>
+<script>
+    var r = document.querySelector(':root');
+    function instaExLink() {
+
+        r.style.setProperty("--color", "black")
+    }
+    myButton.addEventListener("click", function () {
+        myPopup.classList.add("show");
+        r.style.setProperty('--visible', 'table');
+
+    });
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+        r.style.setProperty('--visible', 'none');
+    });
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
