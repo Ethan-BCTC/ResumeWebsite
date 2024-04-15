@@ -1,21 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <!--<link rel="stylesheet" href="styles.css">-->
-    
-    <!--==========UI Kit Framwork==========-->
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
 
-    <!--==========Less Language Link==========-->
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less"></script>
-</head>
-<body>
-  <h1>Hello :)</h1>
-</body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Resume</title>
+
+      <!--==========CSS==========-->
+
+        <!--=====Navigation=====-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+        <!--=====Landing Page=====-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+        <style>
+          .lead {
+            font-size: 1.175em;
+            font-weight: 300;
+          }
+          .uk-logo img {
+            height: 28px;
+          }
+        </style>
+
+      <!--==========JS==========-->
+
+        <!--=====Navigation=====-->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.1.0/dist/js/uikit-icons.min.js"></script>
+
+        <!--=====Landing Page=====-->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+		    <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <!--Navigation-->
+    <div class="uk-section uk-padding-remove-vertical">
+      <div class="uk-container">
+        <div class="uk-grid">
+          <div class="uk-width-1-2@m uk-width-1-2@s">
+            <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-flex-left@m uk-flex-left@s uk-padding-small">
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </div>
+          <div class="uk-width-1-2@m uk-width-1-2@s uk-visible@s uk-padding-small">
+            <div class="uk-flex uk-flex-right">
+              <a href="#" class="uk-button uk-button-default uk-button-small uk-border-rounded uk-margin-small-right">Login</a>
+              <a href="#" class="uk-button uk-button-primary uk-button-small uk-border-rounded">Register</a>
+            </div>
+          </div>
+          <div class="uk-width-1-1">
+            <hr class="uk-margin-remove-top">
+          </div>
+        </div>
+        <div class="uk-grid uk-margin-remove-top">
+          <div class="uk-width-1-2 uk-width-expand@m">
+            <div class="uk-flex uk-flex-middle">
+              <a class="uk-logo uk-navbar-item" href="#">
+                <img src="https://uikitbase.com/library/logo-dark.png" data-src="https://uikitbase.com/library/logo-dark.png" alt="Logo" uk-img>
+              </a>
+            </div>
+          </div>
+          <div class="uk-width-1-2 uk-width-auto@m">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Home</a></li>
+                <li>
+                  <a href="#">Services</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Ocean freight forwarding</a></li>
+                      <li><a href="#">Customs house brokerage</a></li>
+                      <li><a href="#">Transportation & Distribution</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="uk-height-1-1 uk-flex uk-flex-right uk-flex-middle uk-hidden@m">
+              <a class="uk-button" href="#modal-mobile-nav" uk-toggle>
+                <span uk-navbar-toggle-icon></span>
+              </a>
+            </div>
+            <div id="modal-mobile-nav" class="uk-modal-full" uk-modal>
+              <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="uk-width-large uk-padding-large">
+                  <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li class="uk-parent">
+                      <a href="#">Services</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="#">Ocean freight forwarding</a></li>
+                        <li><a href="#">Customs house brokerage</a></li>
+                        <li><a href="#">Transportation & Distribution</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                  <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Navigation-->
+    <!-- TEXT -->
+        <div class="uk-container uk-container-small uk-flex-auto uk-text-center" data-uk-scrollspy="target: > .animate; cls: uk-animation-slide-bottom-small uk-invisible; delay: 300">
+          <h1 class="uk-heading-primary animate uk-invisible" style="font-weight: 700;">Sleek, Fast and Reliable.</h1>
+          <div class="uk-width-4-5@m uk-margin-auto animate uk-invisible">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, reiciendis maxime, facilis nam natus incidunt provident.</p>
+          </div>
+          <div class="uk-margin-medium-top animate uk-invisible" data-uk-margin data-uk-scrollspy-class="uk-animation-fade uk-invisible">
+            <a class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="arrow-right" title="Learn More">LEARN MORE</a>
+            <a class="uk-button uk-button-primary uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="check" title="Learn More">TRY IT OUT</a>
+          </div>
+        </div>
+        <!-- /TEXT -->
+        <!-- FOOT -->
+        <div class="uk-position-bottom-center uk-position-small">
+          <span class="uk-text-small uk-text-center">© 2019 | <a href="https://github.com/zzseba78/Kick-Off" title="Partialy Created by KickOff"> Partialy Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></span>
+        </div>
+        <!-- /FOOT -->
+      </div>
+    </div>
+		<!-- OFFCANVAS -->
+		<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+				<button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+				<ul class="uk-nav uk-nav-default">
+					<li class="uk-active"><a href="#">Active</a></li>
+					<li class="uk-parent">
+						<a href="#">Parent</a>
+						<ul class="uk-nav-sub">
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+						</ul>
+					</li>
+					<li class="uk-nav-header">Header</li>
+					<li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: table"></span> Item</a></li>
+					<li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span> Item</a></li>
+					<li class="uk-nav-divider"></li>
+					<li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li>
+				</ul>
+				<h3>Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+		<!-- /OFFCANVAS -->
+
+
+  </body>
 </html>
