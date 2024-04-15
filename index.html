@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    
+    <!--==========UI Kit Framwork==========-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <!--==========Less Language Link==========-->
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+
+<div class="sticky-header">
+  <div class="nav-bar">
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#grades">Grades</a>
+    <a href="#recommendations">Recommendations</a>
+  </div>
+  <script>
+   // Get the navigation bar element
+const navBar = document.querySelector('.nav-bar');
+
+// Listen for scroll events
+window.addEventListener('scroll', () => {
+    // If the scroll position exceeds the height of the navigation bar
+    if (window.scrollY > navBar.clientHeight) {
+        // Change the background color (e.g., to white)
+        navBar.classList.add('scrolled');
+    } else {
+        // Revert to the initial background color
+        navBar.classList.remove('scrolled');
+    }
+});
+  </script>
+</div>
+<div class="head-page" id="head-page">
+    <img src="path-to-your-portrait.jpg" alt="Your Portrait" class="portrait">
+    <div class="description">
+      <h1>Your Name</h1>
+      <p>Here's a brief description about you. Highlight your professional background, skills, and what makes you unique.</p>
+    </div>
+  </div>
+<!-- Add your resume sections here -->
+<div id="education" class="section">
+ <!-- Main content of the resume -->
+<main>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <p><strong>University of Excellence</strong><br>
+      B.S. in Computer Science, May 2024</p>
+      <p>GPA: 3.8/4.0</p>
+      <!-- Add more educational details here -->
+    </section>
+  
+    <section id="experience" class="section">
+      <h2>Professional Experience</h2>
+      <p><strong>Intern Developer at WebCorp</strong><br>
+      June 2023 - Present</p>
+      <ul>
+        <li>Developed an internal tool that improved workflow efficiency by 20%</li>
+        <li>Collaborated with a team of 5 to design a new feature for the company's main product</li>
+      </ul>
+      <!-- Add more experience details here -->
+    </section>
+  
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p>Proficient in: HTML5, CSS3, JavaScript, React.js, Node.js</p>
+      <p>Familiar with: Python, Java, SQL</p>
+      <!-- Add more skills here -->
+    </section>
+  
+    <section id="projects" class="section">
+      <h2>Passion Projects</h2>
+      <p><strong>Project Name:</strong> My Awesome Web App</p>
+      <p>A web application that helps users track their productivity.</p>
+      <!-- Add more project details here -->
+    </section>
+  
+    <section id="grades" class="section">
+      <h2>Academic Achievements</h2>
+      <p>Dean's List for 5 consecutive semesters</p>
+      <p>Received the 'Excellence in Computer Science' award in 2023</p>
+      <!-- Add more academic achievements here -->
+    </section>
+  
+    <section id="recommendations" class="section">
+      <h2>Recommendation Letters</h2>
+      <p><strong>Professor John Doe</strong><br>
+      "I highly recommend this student for any position they apply to. They have shown exceptional skills in... "</p>
+      <!-- Add more recommendations here -->
+    </section>
+  </main>
+  
+</div>
+<!-- Repeat for other sections -->
+
+<script>
+  // Add your JavaScript here
+  window.addEventListener('DOMContentLoaded', (event) => {
+    // Use JavaScript to dynamically load sections of the resume
+    document.querySelectorAll('.nav-bar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href').substring(1);
+        loadSectionContent(sectionId);
+      });
+    });
+  });
+
+  function loadSectionContent(sectionId) {
+    // Fetch content for the section and update the innerHTML of the section
+    // This is just a placeholder function. You'll need to implement the actual content loading logic.
+    document.getElementById(sectionId).innerHTML = 'Content for ' + sectionId;
+  }
+</script>
+<button onclick="scrollToHeadPage()" class="fixed-button">↑</button>
+
+  <script>
+    // JavaScript function to scroll to the head page
+    function scrollToHeadPage() {
+      document.getElementById('head-page').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+</body>
+</html>
