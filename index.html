@@ -7,12 +7,10 @@
       <title>Resume</title>
 
       <!--==========CSS==========-->
-
-        <!--=====Navigation=====-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
-
-        <!--=====Landing Page=====-->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+        <link rel="stylesheet" href="css/uikit.min.css">
+        <link rel="stylesheet" href="css/uikit.css">
+        <link rel="stylesheet" href="css/uikit-rtl.min.css">
+        <link rel="stylesheet" href="css/uikit-rtl.css">
         <style>
           .lead {
             font-size: 1.175em;
@@ -24,14 +22,10 @@
         </style>
 
       <!--==========JS==========-->
-
-        <!--=====Navigation=====-->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.1.0/dist/js/uikit-icons.min.js"></script>
-
-        <!--=====Landing Page=====-->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
-		    <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+        <script href="js/uikit.min.js"></script>
+        <script href="js/uikit.js"></script>
+        <script href="js/uikit-icons.js"></script>
+        <script href="js/uikit-icons.min.js"></script>
   </head>
 
   <body>
@@ -113,8 +107,12 @@
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, reiciendis maxime, facilis nam natus incidunt provident.</p>
           </div>
           <div class="uk-margin-medium-top animate uk-invisible" data-uk-margin data-uk-scrollspy-class="uk-animation-fade uk-invisible">
-            <a class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="arrow-right" title="Learn More">LEARN MORE</a>
-            <a class="uk-button uk-button-primary uk-button-large uk-width-2-3 uk-width-auto@s" data-uk-icon="check" title="Learn More">TRY IT OUT</a>
+            <a class="uk-button uk-button-default uk-button-large uk-width-2-3 uk-width-auto@s"  title="Learn More" >Interactive CV</a>
+            <a class="uk-button uk-button-primary uk-button-large uk-width-2-3 uk-width-auto@s" title="Learn More" type="button">Download CV</a>
+            <div uk-dropdown>
+              <h3>PDF</h3>
+              <h3>DOCX</h3>
+            </div>
           </div>
         </div>
       </div>
